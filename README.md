@@ -1,50 +1,54 @@
-# Outliers Second Brain - Layer 1 - Memory
+# Part 1 of 4 - Memory
 
-You explain your business to an AI, it understands, you close the window, and all of it is gone.
-Next time you start from nothing and explain it again.
+## The problem
 
-This layer gives it somewhere to write things down that is still there tomorrow.
+You have had roughly the same conversation with your AI four times this month.
 
-## Install it
+You paste the same background about your business at the start of every chat. It gave you a good
+answer a few weeks ago and you cannot find it. You have started copying its answers into a
+document so they are not lost. You have quietly stopped asking it the harder questions, because
+setting up enough background takes longer than doing the job yourself.
 
-From this folder:
+## Why it happens
+
+It has no memory between conversations. Every chat starts as a stranger who has read most of the
+internet and nothing at all about you. And it cannot see anything you already have - what you know
+is spread across your head, your inbox, your phone and a folder of documents, none of which is
+available to it.
+
+## What this does about it
+
+Gives it one folder, on your own computer, that it can read and write to. Plain text files you can
+open and read yourself. It writes what it learns there and reads it back next time.
 
     python install.py
 
-It asks you three questions, makes the folder, writes the rulebook your AI reads before it does
-anything, and points your AI at the folder so it can be found from anywhere.
+Three questions, then it builds. Nothing is overwritten - if there are already files where you
+point it, it says so and asks first.
 
-## What it needs beneath it
+## Why this way and not another
 
-Nothing. This is the bottom of the ladder.
-
-You need Python 3.8 or newer, and git if you want a copy of every change kept - the installer
-will tell you plainly if either is missing rather than failing quietly.
+- It is on your machine, not somebody's service. Nothing to subscribe to, nothing that can raise
+  its price or close and take your notes with it.
+- Plain text opens in anything, today and in ten years.
+- You can read every file yourself, so you never have to take its word for what it knows.
+- It is not tied to one AI. Change which one you use and the folder does not care.
 
 ## What you end up with
 
-    Second Brain/
-      People/  Projects/  Areas/  Meetings/
-      Resources/  Ideas/  Decisions/  Archive/
-      CLAUDE.md        the rulebook your AI reads first. Yours to edit.
-      .gitignore       refuses to keep passwords and keys in your history
-      _layers/         which layers are installed
+A folder with a small set of empty rooms - people, projects, meetings, what you have read - a
+rulebook your AI reads before doing anything, and a line in your AI settings so it can find the
+folder from anywhere.
 
-Plus a line written into your AI's own settings saying where the folder is, so you can ask about
-your business from anywhere rather than only from inside it.
+It is empty, and that is correct.
 
-## Using it
+## How you know it worked
 
-Talk to it. Tell it what happened; it decides where that goes. Then ask it something you would
-otherwise have to remember.
+The first time it tells you something about your own business that a fresh chat window could not
+have told you.
 
-The test that this layer worked: it answers a question about your own business that a fresh chat
-window could not have answered.
-
-## What this layer leaves unsolved
+## What it still does not do
 
 A folder accepts anything, and it has no idea what a good note looks like. Two notes can end up
-with the same name and different contents, and a link to that name then resolves to whichever was
-found first - with nothing telling you that happened.
-
-That is Layer 2.
+with the same name saying different things, and you will get whichever was found first with
+nothing telling you there was a choice. That is Part 2.
